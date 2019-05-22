@@ -7,7 +7,7 @@ libxerces-c-dev libx11-dev libxmu-dev libgl1-mesa-dev
 
 #Build geant4
 WORKDIR geant4
-RUN git clone https://github.com/Geant4/geant4.git
+RUN git clone --depth 1 https://github.com/Geant4/geant4.git
 
 RUN mkdir build && mkdir install
 WORKDIR build
