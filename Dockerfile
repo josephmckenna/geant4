@@ -6,8 +6,9 @@ RUN yum install -y cmake g++ gcc libexpat1-dev \
 libxerces-c-dev libx11-dev libxmu-dev libgl1-mesa-dev
 
 #Build geant4
+RUN mkdir -i geant4
 WORKDIR geant4
-RUN git clone --depth 1 https://github.com/Geant4/geant4.git
+RUN git clone --depth 1 https://github.com/Geant4/geant4.git .
 
 RUN mkdir build && mkdir install
 WORKDIR build
