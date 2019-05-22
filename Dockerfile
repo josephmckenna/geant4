@@ -3,7 +3,7 @@ WORKDIR /
 
 #Install dependencies
 RUN yum install -y cmake g++ gcc libexpat1-dev \
-libxerces-c-dev libx11-dev libxmu-dev libgl1-mesa-dev xerces-c xerces-c-devel
+libxerces-c-dev libx11-dev libgl1-mesa-dev xerces-c xerces-c-devel libXmu libXmu-devel
 
 #Build geant4
 #RUN mkdir geant4
